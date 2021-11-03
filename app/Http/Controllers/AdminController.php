@@ -49,11 +49,12 @@ class AdminController extends Controller
         return view('admin.login');
     }
 
-    // public function logout() {
-    //     if (Auth::check()) {
-    //         Auth::logout();
-    //         return redirect('/login');
-    //     }
-    //     // return redirect()->route('login');
-    // }
+    public function logout() {
+        if (Auth::check()) {
+            Auth::logout();
+
+        }
+        return view('admin.logout');
+        // return redirect()->route('login');
+    }
 }

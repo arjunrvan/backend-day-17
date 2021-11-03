@@ -37,7 +37,7 @@ Route::prefix('admin')->group(function () {
 
     Route::any('/department/edit/{id}', [DepartmentController::class, 'edit'])->name('department.edit');
     Route::any('/department/delete/{id}', [DepartmentController::class, 'delete'])->name('department.delete');
-    // Route::any('/',[AdminController::class,'logout'])->name('logout');
+    Route::any('/logout',[AdminController::class,'logout'])->name('logout');
 });
 
 
